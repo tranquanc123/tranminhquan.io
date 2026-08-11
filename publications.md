@@ -10,8 +10,6 @@ permalink: /publications/
   <a href="{{ '/assets/cv/Quan_Tran_CV.pdf' | relative_url }}">CV</a>
 </nav>
 
-# Publications
-
 ## Ongoing manuscript
 
 1. **Mapping global dengue transmission intensity, environmental suitability, and disease burden.** QM Tran, MB Thayer, MA Johansson. In clearance.
