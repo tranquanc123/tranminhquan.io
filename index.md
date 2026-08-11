@@ -1,123 +1,57 @@
 ---
 layout: default
+title: Home
+permalink: /
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+<nav class="page-nav" aria-label="Site navigation">
+  <a aria-current="page" href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ '/publications/' | relative_url }}">Publications</a>
+  <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
+  <a href="{{ '/assets/cv/Quan_Tran_CV.pdf' | relative_url }}">CV</a>
+</nav>
 
-[Link to another page](./another-page.html).
+# About
 
-There should be whitespace between paragraphs.
+I am an infectious disease modeler with medical and quantitative training. My research integrates surveillance, serology, and mechanistic models to understand arboviral transmission and support vaccination policy, outbreak response, and disease burden estimation.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+## Research
 
-# Header 1
+- **Arboviral dynamics:** dengue transmission, serotype-specific patterns, reproductive number estimation, and real-time outbreak analytics.
+- **Vaccine impact:** vaccination strategies and impact assessment for dengue, yellow fever, chikungunya, and Japanese encephalitis.
+- **Bayesian methods:** hierarchical models, seroepidemiology, catalytic models, bias assessment, and uncertainty quantification.
+- **Decision support:** nowcasting, forecasting, global risk mapping, disease burden estimation, and evidence for outbreak response.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+## Experience
 
-## Header 2
+### Centers for Disease Control and Prevention
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+**Prevention Effectiveness Fellow, Dengue Branch** · 2023–2026  
+San Juan, Puerto Rico
 
-### Header 3
+Dengue outbreak analytics, transmission and vaccine modeling, forecasting, global risk mapping, and analytic support for outbreak response.
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+### University of Notre Dame
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+**Graduate Research Assistant** · 2019–2023  
+Notre Dame, Indiana
 
-#### Header 4
+Modeling vaccine-trial endpoints, dengue forecasts, yellow fever burden, vaccination impact, and uncertainty in vaccination coverage.
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+### Oxford University Clinical Research Unit
 
-##### Header 5
+**Research Assistant** · 2016–2018  
+Ho Chi Minh City, Vietnam
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+Serologic and mathematical modeling studies of chikungunya, Japanese encephalitis, and influenza.
 
-###### Header 6
+## Selected publications
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+1. **Mapping global dengue transmission intensity, environmental suitability, and disease burden.** QM Tran, MB Thayer, MA Johansson. In clearance.
+2. **Lessons learned from real-time nowcasting: The 2024 dengue outbreak in Puerto Rico.** QM Tran et al. Submitted to *Emerging Infectious Diseases*. [DOI](https://doi.org/10.64898/2026.07.20.26358497)
+3. **Misclassification of yellow fever vaccination status revealed through hierarchical Bayesian modeling.** QM Tran, TA Perkins. *American Journal of Epidemiology*, 2025. [DOI](https://doi.org/10.1093/aje/kwae465)
+4. **Expected endpoints from future chikungunya vaccine trial sites informed by serological data and modeling.** QM Tran et al. *Vaccine*, 2023. [DOI](https://doi.org/10.1016/j.vaccine.2022.11.028)
+5. **Estimating the global burden of Japanese encephalitis and the impact of vaccination: a systematic review combined with mathematical modelling.** QM Tran et al. *eLife*, 2020. [DOI](https://doi.org/10.7554/eLife.51027)
+6. **Evidence of previous but not current transmission of chikungunya virus in southern and central Vietnam: Results from a systematic review and a seroprevalence study in four locations** QM Tran et al. *PLOS Neglected Tropical Diseases*, 2018. [DOI](https://doi.org/10.1371/journal.pntd.0006246)
 
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+[View the complete publication list →]({{ '/publications/' | relative_url }})
