@@ -2,16 +2,16 @@
 ---
 
 :root {
-  --aqua: #a7cecb;
-  --teal: #8ba6a9;
-  --olive: #75704e;
-  --sage: #cacc90;
-  --cream: #f4ebbe;
-  --ink: #3f4337;
-  --ink-soft: #626451;
-  --paper: #fffaf0;
-  --line: rgba(117, 112, 78, 0.24);
-  --shadow: 0 24px 70px rgba(72, 76, 61, 0.13);
+  --aqua: #a5c4d4;
+  --teal: #8499b1;
+  --olive: #593f62;
+  --sage: #7b6d8d;
+  --cream: #eef2f5;
+  --ink: #36151e;
+  --ink-soft: #5f5266;
+  --paper: #f8f6fa;
+  --line: rgba(89, 63, 98, 0.22);
+  --shadow: 0 24px 70px rgba(54, 21, 30, 0.14);
   --serif: Georgia, "Times New Roman", serif;
   --sans: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --shell: min(1240px, calc(100vw - 48px));
@@ -29,8 +29,8 @@ body {
   min-width: 320px;
   margin: 0;
   background:
-    radial-gradient(circle at 8% 14%, rgba(167, 206, 203, 0.72), transparent 27rem),
-    radial-gradient(circle at 92% 76%, rgba(202, 204, 144, 0.65), transparent 30rem),
+    radial-gradient(circle at 8% 14%, rgba(165, 196, 212, 0.72), transparent 27rem),
+    radial-gradient(circle at 92% 76%, rgba(123, 109, 141, 0.38), transparent 30rem),
     var(--cream);
   color: var(--ink);
   font: 400 16px/1.72 var(--sans);
@@ -90,15 +90,15 @@ p {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(117, 112, 78, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(117, 112, 78, 0.045) 1px, transparent 1px);
+    linear-gradient(rgba(89, 63, 98, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(89, 63, 98, 0.045) 1px, transparent 1px);
   background-size: 42px 42px;
   mask-image: linear-gradient(to bottom, black, transparent 85%);
 }
 
 .site-header {
   border-bottom: 1px solid var(--line);
-  background: rgba(244, 235, 190, 0.86);
+  background: rgba(165, 196, 212, 0.78);
   backdrop-filter: blur(14px);
 }
 
@@ -168,7 +168,7 @@ p {
   top: 28px;
   overflow: hidden;
   padding: clamp(22px, 3vw, 34px);
-  border: 1px solid rgba(117, 112, 78, 0.38);
+  border: 1px solid rgba(89, 63, 98, 0.38);
   border-radius: 34px 34px 10px 34px;
   background: var(--aqua);
   box-shadow: var(--shadow);
@@ -180,7 +180,7 @@ p {
   bottom: -95px;
   width: 230px;
   height: 230px;
-  border: 34px solid rgba(244, 235, 190, 0.38);
+  border: 34px solid rgba(248, 246, 250, 0.38);
   border-radius: 50%;
   content: "";
   pointer-events: none;
@@ -231,17 +231,18 @@ p {
   z-index: 1;
   margin-bottom: 20px;
   font-family: var(--serif);
-  font-size: clamp(3rem, 5.6vw, 5.2rem);
+  font-size: clamp(2.25rem, 3.6vw, 3.35rem);
   font-weight: 400;
   letter-spacing: -0.065em;
   line-height: 0.85;
+  white-space: nowrap;
 }
 
 .profile-summary {
   position: relative;
   z-index: 1;
   margin-bottom: 25px;
-  color: #4e5b55;
+  color: var(--ink-soft);
   font-size: 0.93rem;
 }
 
@@ -256,9 +257,9 @@ p {
 
 .focus-list span {
   padding: 5px 10px;
-  border: 1px solid rgba(117, 112, 78, 0.42);
+  border: 1px solid rgba(89, 63, 98, 0.42);
   border-radius: 999px;
-  background: rgba(244, 235, 190, 0.34);
+  background: rgba(248, 246, 250, 0.34);
   font-size: 0.68rem;
 }
 
@@ -300,16 +301,16 @@ p {
 }
 
 .button-secondary {
-  background: rgba(244, 235, 190, 0.46);
+  background: rgba(165, 196, 212, 0.28);
   color: var(--ink);
 }
 
 .content-panel {
   min-width: 0;
   padding: clamp(26px, 5vw, 64px);
-  border: 1px solid rgba(117, 112, 78, 0.28);
+  border: 1px solid rgba(89, 63, 98, 0.28);
   border-radius: 10px 34px 34px 34px;
-  background: rgba(255, 250, 240, 0.9);
+  background: rgba(248, 246, 250, 0.92);
   box-shadow: var(--shadow);
 }
 
@@ -336,7 +337,7 @@ p {
 
 .page-nav a:hover {
   border-color: var(--teal);
-  background: rgba(167, 206, 203, 0.26);
+  background: rgba(165, 196, 212, 0.26);
 }
 
 .page-nav a[aria-current="page"] {
@@ -345,8 +346,7 @@ p {
   color: var(--ink);
 }
 
-.content-panel > h1,
-.content-panel > h2:first-of-type {
+.content-panel > h1 {
   position: relative;
   margin-bottom: 38px;
   padding-bottom: 28px;
@@ -357,8 +357,7 @@ p {
   line-height: 0.9;
 }
 
-.content-panel > h1::after,
-.content-panel > h2:first-of-type::after {
+.content-panel > h1::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -377,7 +376,7 @@ p {
   line-height: 1.45;
 }
 
-.content-panel h2:not(:first-of-type) {
+.content-panel h2 {
   margin: 78px 0 28px;
   padding-top: 22px;
   border-top: 1px solid var(--line);
@@ -415,7 +414,7 @@ p {
   padding: 20px 20px 20px 48px;
   border: 1px solid var(--line);
   border-radius: 18px 18px 5px 18px;
-  background: rgba(202, 204, 144, 0.18);
+  background: rgba(123, 109, 141, 0.12);
   color: var(--ink-soft);
   font-size: 0.84rem;
 }
@@ -450,7 +449,7 @@ p {
   padding: 19px 21px;
   border: 1px solid var(--line);
   border-radius: 6px 18px 18px 18px;
-  background: rgba(167, 206, 203, 0.13);
+  background: rgba(165, 196, 212, 0.2);
   color: var(--ink-soft);
   font-size: 0.83rem;
   transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
@@ -458,7 +457,7 @@ p {
 
 .content-panel ol li:hover {
   border-color: var(--teal);
-  background: rgba(167, 206, 203, 0.26);
+  background: rgba(165, 196, 212, 0.34);
   transform: translateX(3px);
 }
 
@@ -516,7 +515,7 @@ p {
 .footer-inner span,
 .footer-inner p {
   margin: 0;
-  color: rgba(255, 250, 240, 0.72);
+  color: rgba(248, 246, 250, 0.72);
   font-size: 0.72rem;
 }
 
@@ -538,7 +537,7 @@ p {
   }
 
   .profile-name {
-    font-size: clamp(3rem, 10vw, 5rem);
+    font-size: clamp(2.15rem, 6vw, 3rem);
   }
 
   .profile-panel::after {
@@ -588,8 +587,7 @@ p {
     margin-bottom: 42px;
   }
 
-  .content-panel > h1,
-  .content-panel > h2:first-of-type {
+  .content-panel > h1 {
     font-size: clamp(2.9rem, 15vw, 4.8rem);
   }
 

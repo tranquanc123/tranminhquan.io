@@ -10,7 +10,7 @@ permalink: /
   <a href="{{ '/assets/cv/Quan_Tran_CV.pdf' | relative_url }}">CV</a>
 </nav>
 
-# About
+## About
 
 I am an infectious disease modeler with medical and quantitative training. My research integrates surveillance data, serology, and mathematical models to understand arboviral transmission and support vaccination policy, outbreak response, and disease burden estimation.
 
