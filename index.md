@@ -12,7 +12,7 @@ permalink: /
 
 ## About
 
-I am an infectious disease modeler with medical and quantitative training. My research integrates surveillance data, serology, and mathematical models to understand arboviral transmission and support vaccination policy, outbreak response, and disease burden estimation.
+I am an infectious disease modeler with training in medicine and quantitative methods. My research integrates diverse data sources with mathematical modeling to understand arboviral transmission and inform vaccination policy, outbreak response, and disease burden estimation.
 
 ## Research
 
