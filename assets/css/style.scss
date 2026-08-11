@@ -231,11 +231,19 @@ p {
   z-index: 1;
   margin-bottom: 20px;
   font-family: var(--serif);
-  font-size: clamp(2.25rem, 3.6vw, 3.35rem);
+  font-size: clamp(2rem, 3vw, 2.7rem);
   font-weight: 400;
   letter-spacing: -0.065em;
   line-height: 0.85;
   white-space: nowrap;
+}
+
+.profile-credentials {
+  font-family: var(--sans);
+  font-size: 0.43em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--plum);
 }
 
 .focus-list {
