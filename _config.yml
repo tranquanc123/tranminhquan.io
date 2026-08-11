@@ -23,3 +23,10 @@ markdown: kramdown
 permalink: pretty
 lang: en
 timezone: Asia/Ho_Chi_Minh
+
+exclude:
+  - docs/
+  - script/
+  - jekyll-theme-minimal.gemspec
+  - README.md
+  - thumbnail.png

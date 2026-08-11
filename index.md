@@ -7,7 +7,6 @@ permalink: /
 <nav class="page-nav" aria-label="Site navigation">
   <a aria-current="page" href="{{ '/' | relative_url }}">Home</a>
   <a href="{{ '/publications/' | relative_url }}">Publications</a>
-  <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
   <a href="{{ '/assets/cv/Quan_Tran_CV.pdf' | relative_url }}">CV</a>
 </nav>
 
