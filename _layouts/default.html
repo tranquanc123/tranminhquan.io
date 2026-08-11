@@ -1,56 +1,69 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
+    <meta name="theme-color" content="#f4ebbe">
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     {% include head-custom.html %}
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+  <body class="page-{{ page.title | default: 'home' | slugify }}">
+    {% assign home_url = '/' | relative_url %}
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
+    <div class="site-frame" aria-hidden="true"></div>
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+    <header class="site-header">
+      <div class="site-shell header-inner">
+        <a class="brand" href="{{ home_url }}" aria-label="Quan M. Tran, home">
+          <span class="brand-mark" aria-hidden="true">QT</span>
+          <span class="brand-copy">
+            <strong>{{ site.title }}</strong>
+            <small>{{ site.tagline }}</small>
+          </span>
+        </a>
+        <span class="header-note">Research · Modeling · Public health</span>
+      </div>
+    </header>
 
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
+    <div class="site-shell page-grid">
+      <aside class="profile-panel" aria-label="Profile">
+        <div class="portrait-wrap">
+          <div class="portrait-accent" aria-hidden="true"></div>
+          <img src="{{ site.profile_image | default: '/assets/img/headshot.jpg' | relative_url }}" alt="Portrait of Quan M. Tran">
+        </div>
 
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
+        <p class="profile-kicker">Infectious disease modeler</p>
+        <h1 class="profile-name">Quan M.<br>Tran</h1>
+        <p class="profile-summary">I combine surveillance, serology, and mathematical models to inform vaccination policy and outbreak response.</p>
 
-        {% if site.show_downloads %}
-        <ul class="downloads">
-          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        {% endif %}
-      </header>
-      <section>
+        <div class="focus-list" aria-label="Research focus">
+          <span>Arboviral dynamics</span>
+          <span>Vaccine impact</span>
+          <span>Bayesian methods</span>
+          <span>Outbreak analytics</span>
+        </div>
 
-      {{ content }}
+        <div class="profile-actions">
+          <a class="button button-primary" href="mailto:{{ site.author.email }}">Email me <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="{{ '/assets/cv/Quan_Tran_CV.pdf' | relative_url }}">View CV</a>
+        </div>
+      </aside>
 
-      </section>
-      <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+      <main class="content-panel" id="main-content">
+        {{ content }}
+      </main>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+
+    <footer class="site-footer">
+      <div class="site-shell footer-inner">
+        <div>
+          <strong>Quan M. Tran</strong>
+          <span>Infectious disease modeling</span>
+        </div>
+        <p>&copy; {{ 'now' | date: '%Y' }} · Built with Jekyll and GitHub Pages</p>
+      </div>
+    </footer>
   </body>
 </html>

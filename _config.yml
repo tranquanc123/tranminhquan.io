@@ -2,7 +2,7 @@ title: Quan M. Tran
 tagline: Infectious disease modeler
 description: >-
   Infectious disease modeler working on arboviral dynamics, vaccine impact, 
-  Bayesian methods, and outbreak analytics.
+  and outbreak analytics.
 
 url: "https://tranquanc123.github.io"
 baseurl: "/tranminhquan.io"
@@ -12,7 +12,8 @@ author:
   name: Quan M. Tran
   email: tranminhquan12332192@gmail.com
 
-image: /assets/img/headshot.jpg
+profile_image: /assets/img/headshot.jpg
+image: /assets/img/og-profile.png
 
 theme: jekyll-theme-minimal
 
