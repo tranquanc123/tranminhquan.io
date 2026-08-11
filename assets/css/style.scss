@@ -229,7 +229,7 @@ p {
 .profile-name {
   position: relative;
   z-index: 1;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-family: var(--serif);
   font-size: clamp(2rem, 3vw, 2.7rem);
   font-weight: 400;
@@ -239,10 +239,11 @@ p {
 }
 
 .profile-credentials {
-  display: block;
-  margin-top: 0.65rem;
+  position: relative;
+  z-index: 1;
+  margin: 0 0 20px;
   font-family: var(--sans);
-  font-size: 0.34em;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   line-height: 1;
