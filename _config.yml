@@ -25,6 +25,7 @@ lang: en
 timezone: Asia/Ho_Chi_Minh
 
 exclude:
+  - vendor/
   - docs/
   - script/
   - jekyll-theme-minimal.gemspec
