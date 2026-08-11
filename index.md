@@ -18,8 +18,8 @@ I am an infectious disease modeler with training in medicine and quantitative me
 
 <div class="research-grid">
   <article class="research-card">
-    <div class="research-visual transmission-visual" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span>
+    <div class="research-visual research-chart-visual">
+      <img src="{{ '/assets/img/research-arboviral-dynamics.png' | relative_url }}" alt="Simplified boxplots showing a decline in force of infection from the 1940s to the 2010s">
     </div>
     <p class="card-label">Transmission</p>
     <h3>Arboviral dynamics</h3>
@@ -27,8 +27,8 @@ I am an infectious disease modeler with training in medicine and quantitative me
   </article>
 
   <article class="research-card">
-    <div class="research-visual vaccine-visual" aria-hidden="true">
-      <span class="vaccine-core">V</span><span class="orbit-dot dot-one"></span><span class="orbit-dot dot-two"></span>
+    <div class="research-visual research-chart-visual">
+      <img src="{{ '/assets/img/research-vaccination-policy.png' | relative_url }}" alt="Two scenario curves showing fewer projected cases with vaccination than without vaccination">
     </div>
     <p class="card-label">Prevention</p>
     <h3>Vaccination policy</h3>
@@ -36,8 +36,8 @@ I am an infectious disease modeler with training in medicine and quantitative me
   </article>
 
   <article class="research-card">
-    <div class="research-visual burden-visual" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span><span></span>
+    <div class="research-visual research-chart-visual">
+      <img src="{{ '/assets/img/research-global-burden.png' | relative_url }}" alt="Global map of median force of infection, with higher modeled values concentrated in parts of the tropics">
     </div>
     <p class="card-label">Population health</p>
     <h3>Global disease burden</h3>
@@ -45,8 +45,8 @@ I am an infectious disease modeler with training in medicine and quantitative me
   </article>
 
   <article class="research-card">
-    <div class="research-visual nowcast-visual" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span><span></span><i></i>
+    <div class="research-visual research-chart-visual decision-chart-visual">
+      <img src="{{ '/assets/img/research-decision-support.png' | relative_url }}" alt="Two-panel nowcasting graphic showing daily infections and the time-varying effective reproductive number from January to March 2024">
     </div>
     <p class="card-label">Real-time analytics</p>
     <h3>Decision support</h3>

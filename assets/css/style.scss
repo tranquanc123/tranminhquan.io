@@ -238,14 +238,6 @@ p {
   white-space: nowrap;
 }
 
-.profile-summary {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 25px;
-  color: var(--soft-plum);
-  font-size: 0.93rem;
-}
-
 .focus-list {
   position: relative;
   z-index: 1;
@@ -447,7 +439,7 @@ p {
 
 .research-visual {
   position: relative;
-  height: 116px;
+  height: 138px;
   margin: 0 -20px 18px;
   overflow: hidden;
   border-bottom: 1px solid var(--line);
@@ -458,112 +450,20 @@ p {
   background-size: 22px 22px;
 }
 
-.transmission-visual,
-.burden-visual,
-.nowcast-visual {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 9px;
-  padding: 22px 28px 18px;
+.research-chart-visual {
+  height: 158px;
+  background: rgba(248, 246, 250, 0.92);
 }
 
-.transmission-visual span {
-  width: 17px;
-  border-radius: 10px 10px 2px 2px;
-  background: var(--plum);
-  opacity: 0.88;
+.decision-chart-visual {
+  height: 210px;
 }
 
-.transmission-visual span:nth-child(1) { height: 18%; }
-.transmission-visual span:nth-child(2) { height: 38%; }
-.transmission-visual span:nth-child(3) { height: 76%; }
-.transmission-visual span:nth-child(4) { height: 54%; }
-.transmission-visual span:nth-child(5) { height: 27%; }
-
-.vaccine-visual {
-  display: grid;
-  place-items: center;
-}
-
-.vaccine-visual::before,
-.vaccine-visual::after {
-  position: absolute;
-  width: 82px;
-  height: 82px;
-  border: 1px solid var(--blue-gray);
-  border-radius: 50%;
-  content: "";
-}
-
-.vaccine-visual::after {
-  width: 104px;
-  height: 50px;
-  border-style: dashed;
-  transform: rotate(-18deg);
-}
-
-.vaccine-core {
-  z-index: 2;
-  display: grid;
-  width: 48px;
-  height: 48px;
-  place-items: center;
-  border-radius: 50% 50% 46% 46%;
-  background: var(--plum);
-  color: var(--soft-white);
-  font-family: var(--serif);
-  font-size: 1.35rem;
-  font-weight: 700;
-}
-
-.orbit-dot {
-  position: absolute;
-  z-index: 3;
-  width: 10px;
-  height: 10px;
-  border: 2px solid var(--soft-white);
-  border-radius: 50%;
-  background: var(--muted-violet);
-}
-
-.dot-one { top: 27px; left: calc(50% - 52px); }
-.dot-two { right: calc(50% - 48px); bottom: 23px; }
-
-.burden-visual span {
-  width: 22px;
-  border-radius: 50% 50% 5px 5px;
-  background: var(--blue-gray);
-}
-
-.burden-visual span:nth-child(1) { height: 34%; }
-.burden-visual span:nth-child(2) { height: 58%; }
-.burden-visual span:nth-child(3) { height: 79%; }
-.burden-visual span:nth-child(4) { height: 68%; }
-.burden-visual span:nth-child(5) { height: 48%; }
-.burden-visual span:nth-child(6) { height: 25%; }
-
-.nowcast-visual span {
-  width: 18px;
-  border-radius: 4px 4px 0 0;
-  background: var(--muted-violet);
-}
-
-.nowcast-visual span:nth-child(1) { height: 20%; }
-.nowcast-visual span:nth-child(2) { height: 28%; }
-.nowcast-visual span:nth-child(3) { height: 42%; }
-.nowcast-visual span:nth-child(4) { height: 61%; }
-.nowcast-visual span:nth-child(5) { height: 72%; }
-.nowcast-visual span:nth-child(6) { height: 86%; }
-
-.nowcast-visual i {
-  position: absolute;
-  top: 42px;
-  left: calc(50% - 70px);
-  width: 140px;
-  border-top: 3px solid var(--deep-burgundy);
-  transform: rotate(-21deg);
-  transform-origin: center;
+.research-chart-visual img {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  object-fit: contain;
 }
 
 .skill-card {
