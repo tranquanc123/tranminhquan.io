@@ -31,21 +31,11 @@
       <aside class="profile-panel" aria-label="Profile">
         <div class="portrait-wrap">
           <div class="portrait-accent" aria-hidden="true"></div>
-          <picture>
-            <source
-              type="image/webp"
-              srcset="{{ '/assets/img/headshot-480.webp' | relative_url }} 480w, {{ '/assets/img/headshot-960.webp' | relative_url }} 960w"
-              sizes="(max-width: 680px) calc(100vw - 84px), (max-width: 940px) 32vw, 360px">
-            <img src="{{ site.profile_image | default: '/assets/img/headshot-960.jpg' | relative_url }}" width="960" height="987" alt="Portrait of Quan M. Tran" fetchpriority="high" decoding="async">
-          </picture>
+          <img src="{{ site.profile_image | default: '/assets/img/headshot.jpg' | relative_url }}" alt="Portrait of Quan M. Tran">
         </div>
 
         <p class="profile-kicker">Infectious disease modeler</p>
-        {% if page.url == '/' %}
-          <h1 class="profile-name">Quan M. Tran</h1>
-        {% else %}
-          <p class="profile-name">Quan M. Tran</p>
-        {% endif %}
+        <h1 class="profile-name">Quan M. Tran</h1>
         <p class="profile-credentials">MD, PhD</p>
 
         <div class="focus-list" aria-label="Research focus">
@@ -57,18 +47,12 @@
         <div class="profile-actions">
           <a class="button button-primary" href="mailto:{{ site.author.email }}">Email me <span aria-hidden="true">↗</span></a>
           <a class="button button-secondary" href="{{ '/assets/cv/Quan_Tran_CV.pdf' | relative_url }}">View CV</a>
-          <a class="button button-secondary" href="https://scholar.google.com/citations?user=koL60SsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <span class="visually-hidden">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
-          <a class="button button-secondary" href="https://github.com/tranquanc123" target="_blank" rel="noopener noreferrer">GitHub <span class="visually-hidden">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
-          <a class="button button-secondary" href="https://www.linkedin.com/in/quan-tran-minh-148a43116/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="visually-hidden">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="https://scholar.google.com/citations?user=koL60SsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/quan-tran-minh-148a43116/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
       </aside>
 
       <main class="content-panel" id="main-content">
-        <nav class="page-nav" aria-label="Site navigation">
-          <a{% if page.url == '/' %} aria-current="page"{% endif %} href="{{ '/' | relative_url }}">Home</a>
-          <a{% if page.url == '/publications/' %} aria-current="page"{% endif %} href="{{ '/publications/' | relative_url }}">Publications</a>
-          <a href="{{ '/assets/cv/Quan_Tran_CV.pdf' | relative_url }}">CV</a>
-        </nav>
         {{ content }}
       </main>
     </div>

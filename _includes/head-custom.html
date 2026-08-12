@@ -3,31 +3,7 @@
 <!-- Setup Google Analytics -->
 {% include head-custom-google-analytics.html %}
 
-<link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Quan M. Tran",
-  "honorificSuffix": "MD, PhD",
-  "url": "{{ '/' | absolute_url }}",
-  "image": "{{ site.profile_image | absolute_url }}",
-  "jobTitle": "Infectious disease modeler",
-  "description": {{ site.description | jsonify }},
-  "sameAs": [
-    "https://scholar.google.com/citations?user=koL60SsAAAAJ&hl=en",
-    "https://www.linkedin.com/in/quan-tran-minh-148a43116/",
-    "https://github.com/tranquanc123"
-  ],
-  "knowsAbout": [
-    "Infectious disease modeling",
-    "Arboviral transmission",
-    "Vaccination policy",
-    "Outbreak analytics",
-    "Disease burden estimation"
-  ]
-}
-</script>
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" -->
 
 <!-- end custom head snippets -->

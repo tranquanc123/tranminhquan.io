@@ -1,8 +1,8 @@
 title: Quan M. Tran
 tagline: Infectious disease modeler
 description: >-
-  Quan M. Tran, MD, PhD, models mosquito-borne disease transmission to inform
-  vaccination policy, outbreak response, and disease burden estimation.
+  Infectious disease modeler working on arboviral dynamics, vaccine impact, 
+  and outbreak analytics.
 
 url: "https://tranquanc123.github.io"
 baseurl: "/tranminhquan.io"
@@ -12,22 +12,13 @@ author:
   name: Quan M. Tran
   email: tranminhquan12332192@gmail.com
 
-profile_image: /assets/img/headshot-960.jpg
-image: /assets/img/og-profile-optimized.jpg
-logo: /assets/img/logo.png
-
-social:
-  name: Quan M. Tran
-  links:
-    - https://scholar.google.com/citations?user=koL60SsAAAAJ&hl=en
-    - https://www.linkedin.com/in/quan-tran-minh-148a43116/
-    - https://github.com/tranquanc123
+profile_image: /assets/img/headshot.jpg
+image: /assets/img/og-profile-v2.png
 
 theme: jekyll-theme-minimal
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-sitemap
 
 markdown: kramdown
 permalink: pretty

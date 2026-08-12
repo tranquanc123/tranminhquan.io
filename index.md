@@ -1,84 +1,56 @@
 ---
 layout: default
-title: Infectious Disease Modeler
+title: Home
 permalink: /
-description: Quan M. Tran, MD, PhD, models mosquito-borne disease transmission to inform vaccination policy, outbreak response, and disease burden estimation.
 ---
+
+<nav class="page-nav" aria-label="Site navigation">
+  <a aria-current="page" href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ '/publications/' | relative_url }}">Publications</a>
+  <a href="{{ '/assets/cv/Quan_Tran_CV.pdf' | relative_url }}">CV</a>
+</nav>
 
 ## About
 
-<p class="about-lede">I model mosquito-borne disease transmission to help public-health teams decide where to focus vaccination, how to interpret outbreaks, and which populations carry the greatest burden.</p>
-
-<p class="about-status"><strong>Recent appointment</strong><span>Prevention Effectiveness Fellow · CDC Dengue Branch · 2023–2026</span></p>
-
-<p class="about-detail">Trained in medicine and quantitative methods, I combine surveillance, serological, and environmental data with mathematical models. My research includes real-time dengue analytics and work on chikungunya, yellow fever, and Japanese encephalitis.</p>
-
-<div class="about-actions" aria-label="About Quan M. Tran">
-  <a class="text-link" href="{{ '/publications/' | relative_url }}">Explore publications <span aria-hidden="true">→</span></a>
-  <a class="text-link" href="{{ '/assets/data/quan-tran-short-bio.txt' | relative_url }}" download>Download short bio <span aria-hidden="true">↓</span></a>
-</div>
+I am an infectious disease modeler with training in medicine and quantitative methods. My research integrates diverse data sources with mathematical modeling to understand arboviral transmission and inform vaccination policy, outbreak response, and disease burden estimation.
 
 ## Research
 
 <div class="research-grid">
   <article class="research-card">
     <div class="research-visual research-chart-visual">
-      <picture>
-        <source type="image/webp" srcset="{{ '/assets/img/research-arboviral-dynamics-640.webp' | relative_url }} 640w, {{ '/assets/img/research-arboviral-dynamics-960.webp' | relative_url }} 960w" sizes="(max-width: 680px) calc(100vw - 70px), 420px">
-        <img src="{{ '/assets/img/research-arboviral-dynamics.png' | relative_url }}" width="1774" height="887" loading="lazy" decoding="async" alt="Simplified boxplots showing a decline in force of infection from the 1940s to the 2010s">
-      </picture>
+      <img src="{{ '/assets/img/research-arboviral-dynamics.png' | relative_url }}" alt="Simplified boxplots showing a decline in force of infection from the 1940s to the 2010s">
     </div>
     <p class="card-label">Transmission</p>
     <h3>Arboviral dynamics</h3>
-    <p><strong>Question.</strong> How do past outbreaks shape immunity and susceptibility today?</p>
-    <p><strong>Approach.</strong> Serological data and catalytic models reconstruct transmission across decades.</p>
-    <p><strong>Evidence.</strong> This work revealed historical chikungunya transmission in Vietnam and changing dengue dynamics in the Americas.</p>
-    <a class="card-link" href="https://doi.org/10.1371/journal.pntd.0006246" target="_blank" rel="noopener noreferrer">Read the chikungunya study <span class="visually-hidden">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+    <p>My research examines how arbovirus transmission changes population immunity over time and how past outbreaks shape present-day patterns of susceptibility. Using serological data and catalytic models, I have reconstructed historical chikungunya transmission in Vietnam and studied dengue dynamics in Puerto Rico, including potential interaction with the emergence of Zika.</p>
   </article>
 
   <article class="research-card">
     <div class="research-visual research-chart-visual">
-      <picture>
-        <source type="image/webp" srcset="{{ '/assets/img/research-vaccination-policy-640.webp' | relative_url }} 640w, {{ '/assets/img/research-vaccination-policy-960.webp' | relative_url }} 960w" sizes="(max-width: 680px) calc(100vw - 70px), 420px">
-        <img src="{{ '/assets/img/research-vaccination-policy.png' | relative_url }}" width="1774" height="887" loading="lazy" decoding="async" alt="Two scenario curves showing fewer projected cases with vaccination than without vaccination">
-      </picture>
+      <img src="{{ '/assets/img/research-vaccination-policy.png' | relative_url }}" alt="Two scenario curves showing fewer projected cases with vaccination than without vaccination">
     </div>
     <p class="card-label">Prevention</p>
     <h3>Vaccination policy</h3>
-    <p><strong>Question.</strong> Which vaccination strategies can prevent the most illness?</p>
-    <p><strong>Approach.</strong> Transmission and burden models compare intervention scenarios across settings.</p>
-    <p><strong>Evidence.</strong> Analyses of yellow fever and Japanese encephalitis quantified vaccination impact and exposed important sources of uncertainty.</p>
-    <a class="card-link" href="https://doi.org/10.7554/eLife.51027" target="_blank" rel="noopener noreferrer">Read the vaccine-impact study <span class="visually-hidden">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+    <p>I use mathematical models to examine the potential impact of public-health interventions. My work has evaluated vaccination strategies for yellow fever and Japanese encephalitis and reconstructed dengue immunity profiles to support evidence-based vaccination planning.</p>
   </article>
 
   <article class="research-card">
     <div class="research-visual research-chart-visual">
-      <picture>
-        <source type="image/webp" srcset="{{ '/assets/img/research-global-burden-640.webp' | relative_url }} 640w, {{ '/assets/img/research-global-burden-960.webp' | relative_url }} 960w" sizes="(max-width: 680px) calc(100vw - 70px), 420px">
-        <img src="{{ '/assets/img/research-global-burden.png' | relative_url }}" width="1691" height="930" loading="lazy" decoding="async" alt="Global map of median force of infection, with higher modeled values concentrated in parts of the tropics">
-      </picture>
+      <img src="{{ '/assets/img/research-global-burden.png' | relative_url }}" alt="Global map of median force of infection, with higher modeled values concentrated in parts of the tropics">
     </div>
     <p class="card-label">Population health</p>
     <h3>Global disease burden</h3>
-    <p><strong>Question.</strong> Where is arboviral risk greatest, and how many people are affected?</p>
-    <p><strong>Approach.</strong> Global surveillance, serological, and environmental evidence is integrated in spatial and burden models.</p>
-    <p><strong>Evidence.</strong> The resulting estimates identify geographic gaps and help direct public-health priorities.</p>
-    <a class="card-link" href="https://doi.org/10.1371/journal.pcbi.1012771" target="_blank" rel="noopener noreferrer">Read the risk-mapping perspective <span class="visually-hidden">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+    <p>I estimate the health burden of arboviral diseases by combining surveillance, serological, and environmental data with mathematical models. Across dengue, yellow fever, and Japanese encephalitis, this work identified where risk is greatest, quantified how many people are affected, and provided evidence for public-health priority setting.</p>
   </article>
 
   <article class="research-card">
     <div class="research-visual research-chart-visual decision-chart-visual">
-      <picture>
-        <source type="image/webp" srcset="{{ '/assets/img/research-decision-support-640.webp' | relative_url }} 640w, {{ '/assets/img/research-decision-support-960.webp' | relative_url }} 960w" sizes="(max-width: 680px) calc(100vw - 70px), 420px">
-        <img src="{{ '/assets/img/research-decision-support.png' | relative_url }}" width="1691" height="930" loading="lazy" decoding="async" alt="Two-panel nowcasting graphic showing daily infections and the time-varying effective reproductive number from January to March 2024">
-      </picture>
+      <img src="{{ '/assets/img/research-decision-support.png' | relative_url }}" alt="Two-panel nowcasting graphic showing daily infections and the time-varying effective reproductive number from January to March 2024">
     </div>
     <p class="card-label">Real-time analytics</p>
     <h3>Decision support</h3>
-    <p><strong>Question.</strong> What is happening now when surveillance reports arrive late?</p>
-    <p><strong>Approach.</strong> Nowcasting and time-varying reproductive-number estimates correct reporting delays and track transmission.</p>
-    <p><strong>Evidence.</strong> During Puerto Rico’s 2024 dengue outbreak, the pipeline translated rapidly changing data into timely response information.</p>
-    <a class="card-link" href="https://doi.org/10.64898/2026.07.20.26358497" target="_blank" rel="noopener noreferrer">Read the nowcasting preprint <span class="visually-hidden">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+    <p>I build a framework that translate rapidly changing surveillance data into timely information for outbreak response. During Puerto Rico’s 2024 dengue outbreak, I developed a nowcasting pipeline and used the time-varying effective reproductive number to track transmission trends in real time.</p>
   </article>
 </div>
 
